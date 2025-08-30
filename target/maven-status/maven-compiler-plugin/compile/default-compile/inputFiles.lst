@@ -6,6 +6,7 @@ C:\main\leaflink\kick-start-spring-boot\src\main\java\com\springboot\kickstart\e
 C:\main\leaflink\kick-start-spring-boot\src\main\java\com\springboot\kickstart\exceptions\ResourceNotFoundException.java
 C:\main\leaflink\kick-start-spring-boot\src\main\java\com\springboot\kickstart\models\User.java
 C:\main\leaflink\kick-start-spring-boot\src\main\java\com\springboot\kickstart\repository\UserRepository.java
+C:\main\leaflink\kick-start-spring-boot\src\main\java\com\springboot\kickstart\security\JwtFilter.java
 C:\main\leaflink\kick-start-spring-boot\src\main\java\com\springboot\kickstart\security\JwtUtils.java
 C:\main\leaflink\kick-start-spring-boot\src\main\java\com\springboot\kickstart\services\CustomUserDetailsService.java
 C:\main\leaflink\kick-start-spring-boot\src\main\java\com\springboot\kickstart\SpringbootApplication.java
