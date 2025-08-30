@@ -1,0 +1,3 @@
+com\springboot\kickstart\SpringbootApplication.class
+com\springboot\kickstart\models\User.class
+com\springboot\kickstart\config\SecurityConfig.class
