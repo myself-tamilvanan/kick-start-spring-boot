@@ -5,6 +5,7 @@ import com.springboot.kickstart.exceptions.ResourceNotFoundException;
 import com.springboot.kickstart.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,6 +18,9 @@ public class UserController {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     @GetMapping
     public List<UserEntity> getUsers() {
         return userRepository.findAll();
@@ -24,6 +28,7 @@ public class UserController {
 
     @PostMapping
     public UserEntity createUser(@RequestBody UserEntity body) {
+        body.setPassword(passwordEncoder.encode(body.getPassword()));
         return userRepository.save(body);
     }
 
